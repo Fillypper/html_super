@@ -179,6 +179,70 @@ nav ul li a:hover {
 }
 
 
+#skills {
+    background-image: url('/backend-4496461_960_720.webp');
+}
+
+.skills-section {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #e0e0e0; /* Texto claro */
+}
+
+.skills-container {
+    max-width: 900px;
+    background-color: rgba(34, 34, 34, 0.9); /* Fundo quase preto com opacidade */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.skills-container h2 {
+    color: #ff9800; /* Cor de destaque */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill {
+    flex: 1 1 calc(25% - 20px); /* 4 itens por linha, com espaço entre eles */
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.skill i {
+    font-size: 40px;
+    color: #ff9800; /* Cor de destaque */
+    margin-bottom: 10px;
+}
+
+.skill h3 {
+    font-size: 20px;
+    color: #e0e0e0; /* Texto claro */
+    margin: 10px 0;
+}
+
+.skill p {
+    font-size: 16px;
+    color: #e0e0e0; /* Texto claro */
+}
+
 footer {
     width: 100%;
     text-align: center;
