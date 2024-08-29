@@ -4,37 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil Pessoal</title>
-    <!-- Link para o CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- Link para o Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Link para o Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
-    <div class="profile-container">
-        <img src="./1647102821248.jpeg" alt="Foto de Perfil" class="profile-pic">
-        <h1 class="name">Luiz Fillypper</h1>
-        <p class="profile-description">Desenvolvedor de Software Focado em Back-End | Entusiasta de Tecnologia</p>
-        <div class="social-icons">
-            <a href="https://instagram.com/fillypper" target="_blank"><i class="bi bi-instagram"></i></a>
-            <a href="https://github.com/fillypper" target="_blank"><i class="bi bi-github"></i></a>
-            <a href="https://twitter.com/fillypper10" target="_blank"><i class="bi bi-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/luiz-fillypper-bonhote-de-oliveira-323b2415b/" target="_blank"><i class="bi bi-linkedin"></i></a>
-        </div>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#profile">Perfil</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="projects-container">
-        <h2>Meus Projetos</h2>
-        <div class="project">
-            <img src="./4812525.png" alt="Sistema Bancário - Python">
-            <a href="https://github.com/Fillypper/desafio_sistema_bancario" target="_blank">Sistema Bancário - Python</a>
-        </div>
-        <div class="project">
-            <img src="./12252.png" alt="BOT Bomb Crypto">
-            <a href="https://github.com/Fillypper/Bomb-crypto" target="_blank">BOT Bomb Crypto</a>
-        </div>
-        <!-- Adicione mais projetos conforme necessário -->
-    </div>
+    <main>
+        <section id="profile" class="parallax">
+            <div class="profile-container">
+                <img src="./1647102821248.jpeg" alt="Foto de Perfil" class="profile-pic animated">
+                <h1 class="name animated">Luiz Fillypper</h1>
+                <p class="profile-description animated">Desenvolvedor de Software Focado em Back-End | Entusiasta de Tecnologia</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/fillypper" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://github.com/fillypper" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="https://twitter.com/fillypper10" target="_blank"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/luiz-fillypper-bonhote-de-oliveira-323b2415b/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="parallax">
+            <div class="projects-container">
+                <h2>Meus Projetos</h2>
+                
+                <div class="project">
+                    <img src="./4812525.png" alt="Sistema Básico Bancário - Python">
+                    <div class="project-details">
+                        <h1>Sistema Bancário Básico - Python</h1>
+                        <p>Projeto desenvolvido levando em consideração o bootcamp vivo da Dio, esta é a versão 1 do sistema bancário</p>
+                        <p>Utilizando apenas estruturas condicionais e concatenação de strings para realizar essa primeira versão</p>
+                        <a href="https://github.com/Fillypper/desafio_sistema_bancario" target="_blank">Ver Projeto no GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="./12252.png" alt="BOT Bomb Crypto - Python">
+                    <div class="project-details">
+                        <h1>BOT Bomb Crypto - Python</h1>
+                        <p>Bot desenvolvido para realizar ações repetitivas, como botar os bonecos para descansar e coloca-los em ação novamente</p>
+                        <p>Bot desenvolvido com python, utilizando a biblioteca pyautogui para reconhecimento de imagens</p>
+                        <a href="https://github.com/Fillypper/Bomb-crypto" target="_blank">Ver Projeto no GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="./django-logo-negative.png" alt="Django">
+                    <div class="project-details">
+                        <h1>Python + Django</h1>
+                        <p>Projeto de criação de site utilizando django e python</p>
+                        <p>Estruturando site com receitas culinárias básico</p>
+                        <a href="https://github.com/Fillypper/Django" target="_blank">Ver Projeto no GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>Contato: <a href="mailto:fillypper@gmail.com">fillypper@gmail.com</a></p>
+    </footer>
 </body>
 </html>

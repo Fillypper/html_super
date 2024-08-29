@@ -1,0 +1,87 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main sections com efeito de parallax */
+main {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+section {
+    padding: 50px;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+#section1 {
+    background: url('img1.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#section2 {
+    background: url('img2.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#section3 {
+    background: url('img3.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Footer com animação */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+    animation: fadeIn 3s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
